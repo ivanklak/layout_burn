@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Burning man</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="header" class="header">
+      <div class="container">
+        <div class="nav">
+          <img src="img/logo.png" alt="Burning Man" class="logo" />
+          <ul class="menu">
+            <li>
+              <a href="#">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                About
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Tickets
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Contacts
+              </a>
+            </li>
+          </ul>
+          <a href="tel: +8-345-67-89" class="tel">+7 910 123 67 89</a>
+          <div class="dropdown">
+            <button class="menu-open" onclick="myFunction()">
+              <img src="img/menu.svg" alt="Open menu" />
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#">Home</a>
+              <a href="#">About</a>
+              <a href="#">Tickets</a>
+              <a href="#">Contacts</a>
+            </div>
+          </div>
+        </div>
+        <div class="offer">
+          <p>It's not just the event. It's life.</p>
+          <h1>Burning man</h1>
+          <a href="#" class="btn">Book your teckets</a>
+        </div>
+      </div>
+    </header>
+    <section id="about" class="about">
+      <div class="container">
+        <h1>About the event</h1>
+        <div class="description">
+          <div class="desc-left">
+            <h3>Rebulding the society</h3>
+            <p>
+              For all its challenges, its complications, and its highs and lows,
+              2020 showed us the boundless resilience, interconnectedness, and
+              creativity of our global community. Now pour yourself a beverage,
+              put on your playa goggles, throw a handful of dust in front of a
+              whirling fan, and read on for info about what we’ve been up to. As
+              2021 kicks off, here's an update about the biggest topics on our
+              minds – Black Rock City, Health & Safety, Sustainability, and
+              Diversity.
+            </p>
+          </div>
+          <div class="desc-right">
+            <h3>This drives us</h3>
+            <p>
+              Man, do we miss you. If you’re like us, you’ve tossed nearly “all
+              things 2020” into the proverbial and metaphorical (maybe even
+              metaphysical?) burn barrel, and you’re ready for a fresh start. We
+              were forced to take a year off from building our magical city in
+              the desert, something we never thought we’d have to do. Always a
+              Herculean communal effort, we’ve somehow pulled it off together
+              for the last 30 years.
+            </p>
+          </div>
+        </div>
+        <div class="fotos">
+          <img src="/img/fotoF.jpg" alt="fotof" />
+          <img src="/img/fotoS.jpg" alt="fotoS" />
+          <img src="/img/fotoTh.jpg" alt="fotoTh" />
+        </div>
+      </div>
+    </section>
+    <footer id="footer" class="footer">
+      <div class="container">
+        <div class="footer-text">
+          <p>2021 Burning man project</p>
+          <p>Klakotckii stodios</p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+      window.onclick = function(event) {
+        if (!event.target.matches(".menu-open")) {
+          const dropdowns = document.getElementsByClassName("dropdown-content");
+          for (let i = 0; i < dropdowns.length; i++) {
+            let openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains("show")) {
+              openDropdown.classList.remove("show");
+            }
+          }
+        }
+      };
+    </script>
+  </body>
+</html>
